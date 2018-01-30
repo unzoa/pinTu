@@ -1,0 +1,17 @@
+<view class="container shareBack">
+
+  <view class='userCon'>
+    <image class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+    <view class="userText">{{userInfo.nickName}}{{shareText[0]}}</view>
+  </view>
+
+  <view class='miniQr'>
+    <image class="userinfo-avatar" src="{{qrPic}}" background-size="cover"></image>
+  </view>
+
+  <view class='shareCon'>
+    <button type='default' type='' open-type="share">{{shareText[1]}}</button>
+    <text bindtap='goPinTu'>{{shareText[2]}}</text>
+  </view>
+
+</view>

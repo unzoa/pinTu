@@ -1,0 +1,153 @@
+<view class="container">
+
+  <view class='pMain text-center'>
+    <image class="userinfo-avatar" src='{{userPic}}'></image>
+    <view class='pSlogan'>{{title}}</view>
+
+    <!-- pin de tu -->
+    <view class="pShowFirst" style='background-image:url({{targetPic}})' bindtap='showModal'>
+      <view wx:if="{{check==1}}">
+        <text>{{initList.money}}{{ptt[5]}}</text>
+        <view>
+          <!-- <image></image> -->
+          <text>{{initList.time}}{{ptt[10]}}</text>
+        </view>
+      </view>
+    </view>
+
+    <!-- option act btn -->
+    <view class='rows optionAct'>
+      <view class='optionActItem' bindtap='withDraw'>
+        <image></image>
+        <text>{{ptt[1]}}</text>
+      </view>
+      <view class='optionActItem' bindtap='goHome'>
+        <image></image>
+        <text>{{ptt[2]}}</text>
+      </view>
+      <view class='optionActItem' bindtap='goShare'>
+        <image></image>
+        <text>{{ptt[3]}}</text>
+      </view>
+    </view>
+
+    <!-- info con -->
+    <view class='infoCon' style='height:calc({{infoH}} - 13.6rem)'>
+    
+      <!-- hongbao info -->
+      <view class="rows hbInfo">
+        <view class='col-50 text-left'>
+          {{ptt[4]}}{{money}}{{ptt[5]}}{{ptt[12]}}{{ptt[6]}}{{check}}{{ptt[7]}}
+        </view>
+        <view class='col-50 text-right'>
+          {{ptt[8]}}
+        </view>
+      </view>
+
+      <!-- my info  -->
+      <view class='rows myInfo' wx:if="{{check==1}}">
+        <view class='col-50 text-left'>
+          <image class='fl' src='{{userInfo.avatarUrl}}'></image>
+          <view class='fl myInfoLeft myInfoName'>
+            <view>{{userInfo.nickName}}</view>
+            <view>{{ptt[9]}}{{initList.time}}{{ptt[10]}}</view>
+          </view>
+        </view>
+
+        <view class='col-50 text-right myInfoLeft'>
+          <view>{{initList.money}}{{ptt[5]}}</view>
+          <view>{{initList.dtime}}</view>
+        </view>
+      </view>
+
+      <!-- go my logs  -->
+      <view class='myLog'>
+        {{ptt[11]}}
+      </view>
+
+    </view>
+    
+
+  </view>
+
+  <view class='pModal' wx:if="{{mShow}}">
+
+    <!-- time -->
+    <view class='likeBtn spendTime'>
+      {{ptt[9]}}{{spendTime}}{{ptt[10]}}
+    </view>
+
+    <!-- act con -->
+    <view class='actCon rows'>
+
+      <view 
+      wx:for="{{radioSelect}}" 
+      wx:for-index="idx" 
+      wx:for-item="itemName" 
+      wx:key="j"
+      class='fl gridItem'
+      data-vid="{{itemName.id}}"
+      bindtap='clickPic'
+      animation="{{animationData[itemName.id]}}"
+      style='width:calc(240px / {{rowNo}});height:calc(240px / {{rowNo}});top:{{itemName.top}};left:{{itemName.left}};background-image:url({{itemName.src}});'>
+      <!-- {{itemName.id}} -->
+       <!-- <view> top:{{itemName.top}}</view>  -->
+       <!-- left:{{itemName.left}}  -->
+      </view>
+
+    </view>
+
+    <!-- alert -->
+    <view class='alertText'>{{ptt[13]}}</view>
+
+    <!-- give up -->
+    <view class='likeBtn giveUp' bindtap='showModal' wx:if="{{pinStart}}">{{ptt[14]}}</view>
+
+  </view>
+
+  <view class='pModal cashModal' wx:if="{{withdraw}}">
+    <view class='rows headCon'>
+
+      <view class='rows'>
+        <view class='col-30'>账户余额</view>
+        <view class='col-70 text-center'>2.00元</view>
+      </view>
+
+      <view class='rows'>提现金额</view>
+
+      <view class='rows'>
+        <view class='col-30'>¥</view>
+        <view class='col-70'>
+          <input type='number' class='text-center'></input>
+        </view>
+      </view>
+
+      <view class='rows'>
+        <view class='col-70'>
+        提现到微信钱包， <text class='myLog'>全部提现</text>
+        </view>
+        <view class='col-30 text-right'>
+        <text class='myLog'>投诉</text>
+        </view>
+      </view>
+
+      <view class='rows'>
+        <button type='primary'>提现</button>
+        <button type='primary' plain="true">如何减免手续费？</button>
+      </view>
+
+      <view class='rows'>
+        <view class='col-80 col-offset-10 text-center'>
+        至少提现2元，手续费10%，每天可提现三次，1-5个工作日到账，如有问题，请加微信123456789
+        </view>
+      </view>
+
+    </view>
+
+    <view class='cancelBtn'>
+      <button type='warn' size='mini' plain='true' bindtap='withDraw'>取消</button>
+    </view>
+
+  </view>
+
+</view>

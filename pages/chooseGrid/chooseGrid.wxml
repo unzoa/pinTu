@@ -1,0 +1,80 @@
+<view class='container rows'>
+
+  <view class='chooseOption'>
+
+    <view class='rows'>
+         <picker bindchange="bindPickerChange" value="{{index}}" range="{{array}}">
+          <view class="picker rows">
+            <view class='col-30'>
+              <text class='optionLabel'>选择一句话</text>
+            </view>
+            <view class='col-70'>
+              {{array[index]}}
+            </view>
+          </view>
+        </picker> 
+
+    </view>
+
+    <view class='rows'>
+      <view class='col-30'>
+        <text class='optionLabel'>{{gridText[0]}}</text>
+      </view>
+      <view class='col-70'>
+        <radio-group class="group" bindchange="radioChange">
+          <view class="label-2" wx:for="{{radioItems}}" wx:key="j">
+            <radio id="{{item.name}}" hidden value="{{item.name}}" checked="{{item.checked}}"></radio>
+            <label class="label-2__text" for="{{item.name}}">
+            <view class="label-2__icon">
+              <view class="label-2__icon-checked" style="opacity:{{item.checked ? 1: 0}}"></view>
+            </view>
+            <text>{{item.name}}</text>
+            </label>
+          </view>
+        </radio-group>
+      </view>
+    </view>
+
+    <view class='rows'>
+      <view class='col-30'>
+        <text class='optionLabel'>{{gridText[1]}}</text>
+      </view>
+      <view class='col-70'>
+        <input placeholder='{{gridText[3]}}' bindinput="moneyIn" type='digit' placeholder-style=" color: #FF9933;"></input>
+      </view>
+    </view>
+
+    <view class='rows'>
+      <view class='col-30'>
+        <text class='optionLabel'>{{gridText[2]}}</text>
+      </view>
+      <view class='col-70'>
+        <input placeholder='{{gridText[4]}}' bindinput="personIn" type='number' placeholder-style=" color: #FF9933;"></input>
+      </view>
+    </view>
+
+  </view>
+
+  <view class='waringTextCon'>
+    <text class='warningText'>{{gridText[5]}}</text>
+  </view>
+
+  <view class='buildCon'>
+    <button 
+    type='default' 
+    plain='true'
+    bindtap='goShare'>{{gridText[6]}}</button>
+  </view>
+
+  <view class='picGrid rows' style="background-image:url({{picUrl}});height:{{picGridH}}">
+      <view 
+      wx:for="{{radioSelect}}" 
+      wx:for-index="idx" 
+      wx:for-item="itemName" 
+      wx:key="j"
+      class='fl gridItem'
+      style='width:calc(8rem / {{radioSelectNo}});height:calc(8rem / {{radioSelectNo}});'></view>
+
+  </view>
+
+</view>

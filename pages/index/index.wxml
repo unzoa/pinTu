@@ -1,0 +1,22 @@
+<!--index.wxml-->
+<view class="container" style="min-height:{{winH}}">
+
+  <view class="userinfo">
+     <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" plain='true'> 获取头像昵称 </button> 
+    <block>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">嗨！{{userInfo.nickName}}</text>
+      <text class="welcomeText">{{welcomeText}}</text>
+    </block>
+  </view>
+
+  <view class='uploadPic'>
+    <image src="{{uploadPic}}" style="width: 120px;height: {{uploadPicW}}" bindtap='choosePic'></image>
+  </view>
+
+  <view class="warningTextCon" >
+    <!-- <button type='primary' size="mini" bindtap="goCropper">cropper</button> -->
+    <text class="welcomeText" bindtap='goChooseGrid'>{{warningText}}</text>
+  </view>
+
+</view>

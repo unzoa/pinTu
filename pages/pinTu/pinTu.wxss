@@ -1,0 +1,292 @@
+.rows {
+  overflow: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.col-offset-10 {
+  margin-left: 10%;
+}
+
+.col-20 {
+  float: left;
+  width: 20%;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+}
+
+.col-30 {
+  float: left;
+  width: 30%;
+}
+
+.col-35 {
+  float: left;
+  width: 35%;
+}
+
+.col-40 {
+  float: left;
+  width: 40%;
+}
+
+.col-45 {
+  float: left;
+  width: 45%;
+}
+
+.col-50 {
+  float: left;
+  width: 50%;
+}
+
+.col-55 {
+  float: left;
+  width: 55%;
+}
+
+.col-60 {
+  float: left;
+  width: 60%;
+}
+
+.col-65 {
+  float: left;
+  width: 65%;
+}
+
+.col-70 {
+  float: left;
+  width: 70%;
+}
+
+.col-80 {
+  float: left;
+  width: 80%;
+}
+
+.col-90 {
+  float: left;
+  width: 90%;
+}
+
+/*text-align*/
+.text-left {
+  text-align: left;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.pSlogan{
+  color: #FFCC66;
+}
+.pShowFirst{
+  position: relative;
+  top: 1rem;
+  left: calc(50% - 3.5rem);
+  width: 7rem;
+  height: 7rem;
+  background-color: #fff;
+  background-size:cover;
+  background-position:center;
+  background-repeat: no-repeat;
+  font-size:1.2rem;
+  color:#fff;
+  line-height:2.5rem;
+  padding-top:1rem;
+  box-sizing:border-box;
+}
+
+.optionAct{
+  position: relative;
+  top: 2rem;
+  width: calc(100% - 2rem);
+  left: 1rem;
+  margin-bottom:2rem;
+  color: #FFCC66;
+}
+.optionActItem{
+  float: left;
+  width: calc(100% / 3);
+}
+.optionActItem>image{
+  width: 1rem;
+  height: 1rem;
+}
+
+.infoCon{
+  overflow: hidden;
+  background-color: #f5f6f5;
+  margin-top: 2.7rem;
+}
+.hbInfo{
+  color: #999;
+  padding: 0.5rem 1rem;
+}
+
+.myInfo{
+  position: relative;
+  top: 0;
+  width: calc(100% - 2rem);
+  left:1rem;
+  box-sizing: border-box;
+  padding: 0.5rem;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.myInfo>.col-50 image{
+  width: 3rem;
+  height: 3rem;
+  border-radius: 10px;
+}
+.myInfoLeft{
+  padding-left:7px;
+  box-sizing:border-box;
+}
+.myInfoLeft>view:nth-child(2){
+  color:#999;
+  margin-top: 5px;
+}
+.myInfoName{
+  width: calc(100% - 3rem - 7px);
+}
+.myInfoName>view:first-child{
+  white-space: nowrap;
+}
+
+.myLog{
+  margin-top: 1rem;
+  color: #576b95;
+}
+
+
+.pModal{
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgb(255, 102, 51)
+}
+
+.likeBtn{
+  width: 10rem;
+  left: calc(50% - 5rem);
+  padding: 7px 0;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: calc(1rem + 14px);
+  color: #fff;
+}
+
+.spendTime{
+  position: relative;
+  top: 1rem;
+  background: transparent;
+  border:1px solid #fff;
+}
+.giveUp{
+  position: fixed;
+  bottom: 2rem;
+  background-color: #666;
+  border:1px solid #666;
+}
+
+.actCon{
+  position: relative;
+  top: 2.5rem;
+  left: calc(50% - 123px);
+  width: 240px;
+  height: 240px;
+  background-color: rgba(0,0,0,.5);
+  border: 3px solid #fff;
+}
+
+.alertText{
+  position: relative;
+  top: 3rem;
+  color: #FFCC66;
+  text-align: center;
+}
+.gridItem{
+  position: absolute;
+  top: 0;
+  left: 0;
+  /* box-sizing: border-box; */
+  /* border:0.5px solid #fff; */
+  color: #fff;
+  /* padding: 5px; */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.cashModal{
+  background: #f5f5f5;
+}
+.headCon{
+  position: relative;
+  top: 3rem;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  box-sizing: border-box;
+  padding: 10px;
+  background: #fff;
+  font-size: 0.8rem;
+}
+.headCon>.rows:nth-child(1),
+.headCon>.rows:nth-child(3){
+  line-height: 2.5rem;
+}
+.headCon>.rows:nth-child(2){
+  line-height: 1.2rem;
+}
+.headCon>.rows:nth-child(1) .col-70{
+  font-size: 1rem;
+  color: #999;
+}
+.headCon>.rows:nth-child(3){
+  font-size: 1rem;
+  border-bottom: 1px solid #f5f5f5;
+}
+.headCon>.rows:nth-child(3) input{
+  height: 2.5rem;
+}
+.headCon>.rows:nth-child(4),
+.headCon>.rows:nth-child(6){
+  font-size: 0.5rem;
+  color: #999;
+}
+.headCon>.rows:nth-child(4){
+  line-height: 2rem;
+}
+.headCon>.rows button{
+  height: 34px;
+  line-height: 34px;
+  font-size: 0.8rem;
+  margin-bottom: 7px;
+}
+.cancelBtn{
+  position: fixed;
+  bottom: 3rem;
+  width: 100%;
+  text-align: center;
+}

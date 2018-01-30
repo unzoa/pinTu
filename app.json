@@ -1,0 +1,15 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/chooseGrid/chooseGrid",
+    "pages/sharePk/sharePk",
+    "pages/pinTu/pinTu",
+    "pages/cropper/index"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#FF6633",
+    "navigationBarTitleText": "拼图",
+    "navigationBarTextStyle":"#fff"
+  }
+}

@@ -1,0 +1,35 @@
+/**index.wxss**/
+.userinfo {
+  display: flex;
+   flex-direction: column; 
+   align-items: center; 
+}
+
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo-nickname,.welcomeText {
+  color: #FFCC66;
+}
+.welcomeText{
+	font-size: 0.8rem;
+	display: inline-block;
+	margin: 1rem 0; 
+}
+.warningTextCon{
+	position: fixed;
+	bottom: 2rem;
+	box-sizing: border-box;
+	padding:0 20%;
+	text-align: center;
+	font-size: 0.5rem;
+}
+
+
+.uploadPic{
+	text-align: center;
+}

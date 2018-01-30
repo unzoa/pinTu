@@ -1,0 +1,56 @@
+.shareBack{
+  background-color: #ef5724;
+}
+.userCon{
+  text-align: center;
+  border-bottom-left-radius:50%;
+  border-bottom-right-radius:50%;
+  padding-top:1rem;
+  padding-bottom:4rem;
+  background-color: #FF6633;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userText{
+  color: #FFCC66;
+  font-size: 0.8rem;
+}
+
+.shareCon{
+  position:relative;
+  top:0rem;
+  left:1rem;
+  width:calc(100% - 2rem);
+  box-sizing:border-box;
+  padding:10px;
+  background:#fff;
+  border-radius:10px;
+  text-align:center;
+  font-size:0.8rem;
+  line-height:2rem;
+  color: #FFCC66;
+}
+
+.shareCon>button{
+  background-color: #1aad19;
+  color: #fff;
+  height: 32px;
+  line-height: 32px;
+  font-size: 0.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.miniQr{
+  position:relative;
+  top:-3.5rem;
+  text-align: center;
+}
+.miniQr image{
+  width: 6rem;
+  height: 6rem;
+  border-radius:50%;
+}

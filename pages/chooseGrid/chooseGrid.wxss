@@ -1,0 +1,182 @@
+.rows {
+  overflow: hidden;
+}
+
+.fl {
+  float: left;
+}
+
+.col-offset-10 {
+  margin-left: 10%;
+}
+
+.col-20 {
+  float: left;
+  width: 20%;
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+}
+
+.col-30 {
+  float: left;
+  width: 30%;
+}
+
+.col-35 {
+  float: left;
+  width: 35%;
+}
+
+.col-40 {
+  float: left;
+  width: 40%;
+}
+
+.col-45 {
+  float: left;
+  width: 45%;
+}
+
+.col-50 {
+  float: left;
+  width: 50%;
+}
+
+.col-55 {
+  float: left;
+  width: 55%;
+}
+
+.col-60 {
+  float: left;
+  width: 60%;
+}
+
+.col-65 {
+  float: left;
+  width: 65%;
+}
+
+.col-70 {
+  float: left;
+  width: 70%;
+}
+
+.col-80 {
+  float: left;
+  width: 80%;
+}
+
+.col-90 {
+  float: left;
+  width: 90%;
+}
+
+/*text-align*/
+
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.chooseOption {
+  position: relative;
+  top: 1rem;
+  left: 1rem;
+  width: calc(100% - 2rem);
+  font-size: 0.8rem;
+  color: #fff;
+  background-color: #fc9;
+  border-radius: 10px;
+  box-sizing: border-box;
+  padding: 10px;
+}
+
+.chooseOption>.rows {
+  border-bottom: 0.5px solid #f63;
+  padding: 10px 0;
+}
+
+.chooseOption>.rows:last-child {
+  border: none;
+}
+
+.optionLabel {
+  color: #f93;
+}
+
+.label-2 {
+  display: inline-block;
+}
+
+.label-2__icon {
+  position: relative;
+  top: -2px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 18px;
+  height: 18px;
+  background: #fcfff4;
+  border-radius: 50px;
+}
+
+.label-2__icon-checked {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  background: #f63;
+  border-radius: 50%;
+}
+
+.label-2__text {
+  margin-right: 10px;
+  color: #f93;
+}
+
+.waringTextCon {
+  margin-top: 1rem;
+  color: #fc6;
+  padding: 1rem;
+  font-size: 0.8rem;
+  text-align: center;
+}
+
+.buildCon {
+  position: relative;
+  top: 0;
+  left: 1rem;
+  width: calc(100% - 2rem);
+}
+
+.buildCon>button {
+  background-color: #fc9 !important;
+  height: 32px;
+  line-height: 32px;
+  border: none !important;
+  color: #f63 !important;
+  font-size: 0.8rem;
+}
+
+.picGrid{
+  position: fixed;
+  bottom: 2rem;
+  left: calc(50% - 4rem);
+  width:8rem;
+  max-height:8rem; 
+  background-color: #fff;
+  background-position: center;
+  background-size: cover;
+}
+.gridItem{
+  box-sizing: border-box;
+  border:0.5px solid #fff;
+}
